@@ -24,7 +24,7 @@ export default function Search() {
         disabled={!state.can({ type: 'search' })}
         onClick={() => send({ type: 'search', searchText: searchInputRef.current?.value ?? '' })}
       >
-        Iniciar Busqueda
+        Search
       </Button>
       {state.can('cancel') && (
         <Button variant="ghost" onClick={() => send({ type: 'cancel' })}>
